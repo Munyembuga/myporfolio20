@@ -175,6 +175,14 @@
                 </div>
             </div>
     </section>
+      <!-- <section id="contactus">
+        <div class="contactushead"> 
+            <h1>Contact us</h1>
+            <hr class="linee">
+        </div>
+
+      </section> -->
+
     <section id ="client">
         <div class="clientsay">
             <h1>What My Clients Says</h1>
@@ -227,16 +235,29 @@
     </section> -->
 
     <section id ="footer">
+        <form action="" id="form1">
      <div class="footerhead">
         <div class="footercontent">
             <h1>Stay In Touch</h1>
             <hr class="linee">
             <br>
-            <input type="email" name="email" placeholder="email" required><br><br>
+            <label for="">Email:</label>
+            <input type="email" name="email" placeholder="email" id="contact-email" onkeyup="validateemail()"><br>
+            <span id="emailerror"style="color:red;"></span><br><br>
+            <!-- <div class="inputgroup"> -->
+                <label for=""> Your message:</label><br>
+                <textarea name="message"   rows="5" placeholder="Enter Your message" id="contact-message" onkeyup="validatemessage()">
+                </textarea> <br>
+                <span id = "message-error" style="color:red;"></span><br>
             
-            <button>Subscribe</button>
+            
+            <button  onclick = " return validatesubmitt() ">Subscribe</button> <br>
+    
+
+            <span id="submit-error" style="color: red;"> </span>
         </div>
      </div>
+    </form>
      <div class="footbody">
         <div class="footbodycontent">
             <div class="footbodybtn">
@@ -262,5 +283,6 @@
      </div>
 
     </section>
+    <script src="script1.js"></script>
 </body>
 </html>

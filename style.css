@@ -276,6 +276,7 @@
 
     
 }
+
 .linee{
     width:80px;
     color:red;
@@ -396,3 +397,87 @@
     background:red;
 
 }
+form{
+    width: 300px;
+    margin-left: 20px;
+    padding-left: 500px;
+}
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 20px;
+
+
+}
+form input{
+    width: 90%;
+    padding:10px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 7px;
+    outline: none;
+
+}
+ input[type="button"]
+ {
+    width: 320px;
+    height: 350px;
+    margin-top: 20px;
+    border: none;
+    background-color: #49c1a2;
+    color: white;
+    font-size: 20px; 
+    align-content: center;
+  
+
+
+ }
+ @media  (max-width:700px){
+    .aboutcontent{
+        display: block;
+        flex-direction: column;
+    }
+    .aboutcontent2{
+        display: block;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .servicecontent{
+        display: block;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: 70px;
+    }
+    .headmypotifoliocont{
+        display: block;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: 80px;
+    }
+    .experiancecontent{
+        display: block;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: 20px;
+        margin-right: 20;
+    }
+    .experiancecontent2{
+        display: block;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: 90px;
+       
+    }
+    .clientcontent{
+        display: block;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: 90px;
+
+    }
+    #form1{
+        
+        margin-left:-200px;
+    }
+
+ }
